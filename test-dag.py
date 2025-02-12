@@ -21,7 +21,7 @@ from typing import Any, Dict, List, Union, cast
 
 
 # @dag(start_date=datetime(2024, 2, 2), schedule_interval='@daily', catchup=False)
-@dag(start_date=datetime(2024, 2, 2), schedule_interval='@daily', catchup=False, access_control= {'cld-dc-golden-path': {'DAG Runs': {'can_create'}}})
+@dag(start_date=datetime(2024, 2, 2), schedule_interval='@daily', catchup=False, access_control= {'cld-dc-golden-path': {'DAG Runs': {'can_dag_read'}}})
 def test_day_dag():
 
     # Define tasks
