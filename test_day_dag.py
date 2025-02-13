@@ -18,11 +18,12 @@ import os
 from pathlib import Path
 from sqlalchemy.orm import exc
 from typing import Any, Dict, List, Union, cast
+from airflow.security import permissions
 
 access_control = {
     "cld-dc-golden-path" : {
-        "DAG Runs": {'can_read' },
-        "DAGs": {'can_read' }
+        permissions.RESOURCE_DAG_RUN : { permissions.ACTION_CAN_READ, permission.ACTION_CAN_EDIT },
+        permissions.RESOURCE_DAG: { permissions.ACTION_CAN_READ, permission.ACTION_CAN_EDIT }
     }
 }
 
