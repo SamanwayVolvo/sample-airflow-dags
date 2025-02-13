@@ -23,7 +23,7 @@ access_control = {
     "cld-dc-golden-path" : {
     # "cld-data-launchpad-sg" : {
         "DAG Runs": {'can_read','can_edit', 'can_create'},
-        "DAGs": {'can_read','can_edit','can_create'},
+        "DAGs": {'can_read','can_edit', 'can_create'},
     }
 }
 
