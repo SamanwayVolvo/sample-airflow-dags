@@ -21,10 +21,10 @@ from typing import Any, Dict, List, Union, cast
 
 access_control = {
     # "cld-dc-golden-path" : {
-    "cld-data-launchpad-sg" : {
-        "DAG Runs": {'can_read','can_edit', 'can_create'},
-        "DAGs": {'can_read','can_edit', 'can_create'},
-    }
+    # "cld-data-launchpad-sg" : {
+    #     "DAG Runs": {'can_read','can_edit', 'can_create'},
+    #     "DAGs": {'can_read','can_edit', 'can_create'},
+    # }
 }
 
 # @dag(start_date=datetime(2024, 2, 2), schedule_interval='@daily', catchup=False)
