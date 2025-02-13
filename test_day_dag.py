@@ -21,7 +21,7 @@ from typing import Any, Dict, List, Union, cast
 
 access_control = {
     "cld-dc-golden-path" : {
-        "DAG Runs": {'can_read'},
+        "DAG Runs": {'can_read','can_edit'},
         "DAGs": {'can_read','can_edit'},
     }
 }
