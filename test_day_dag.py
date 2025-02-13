@@ -21,10 +21,10 @@ from typing import Any, Dict, List, Union, cast
 from airflow.security import permissions
 
 access_control = {
-    "cld-dc-golden-path" : {
-        permissions.RESOURCE_DAG_RUN : { permissions.ACTION_CAN_READ, permissions.ACTION_CAN_EDIT },
-        permissions.RESOURCE_DAG: { permissions.ACTION_CAN_READ, permissions.ACTION_CAN_EDIT }
-    }
+    # "cld-dc-golden-path" : {
+    #     permissions.RESOURCE_DAG_RUN : { permissions.ACTION_CAN_READ, permissions.ACTION_CAN_EDIT },
+    #     permissions.RESOURCE_DAG: { permissions.ACTION_CAN_READ, permissions.ACTION_CAN_EDIT }
+    # }
 }
 
 # @dag(start_date=datetime(2024, 2, 2), schedule_interval='@daily', catchup=False)
