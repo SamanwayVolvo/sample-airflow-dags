@@ -20,11 +20,11 @@ from sqlalchemy.orm import exc
 from typing import Any, Dict, List, Union, cast
 
 access_control = {
-    # "cld-dc-golden-path" : {
-    #     "DAG Runs": {'can_read'},
-    #     "DAGs": {'can_read','can_edit'},
-    #     # "DAG Code": {'can_read'}
-    # }
+    "cld-dc-golden-path" : {
+        "DAG Runs": {'can_read'},
+        "DAGs": {'can_read','can_edit'},
+        # "DAG Code": {'can_read'}
+    }
 }
 
 # @dag(start_date=datetime(2024, 2, 2), schedule_interval='@daily', catchup=False)
